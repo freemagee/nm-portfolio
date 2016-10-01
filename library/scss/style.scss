@@ -110,10 +110,34 @@ p {
     min-height: 100%;
     display: flex;
     justify-content: center;
-    background-color: $color__light;
+    background-color: $color__dark;
 
     .inner {
         max-width: 600px;
         padding-top: 50px;
+    }
+}
+
+.project {
+    margin: 0;
+    padding: 30px 0 0 0;
+
+    &--github {
+        background: url('/library/img/github.svg') 0 0 no-repeat;
+        background-size: 20px;
+    }
+
+    &__item {
+        list-style: none;
+    }
+
+    &__link {
+        font-size: 1.3rem;
+        color: $color__light;
+        text-decoration: none;
+
+        &:hover {
+            color: $color__accent;
+        }
     }
 }
