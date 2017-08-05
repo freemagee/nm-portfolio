@@ -115,7 +115,7 @@ function pre_r($val) {
         <div class="inner">
             <div class="logo"><img src="/library/img/logo.svg" alt="NM" /></div>
             <h1 class="title title__light">Neil Magee</h1>
-            <h2 class="subtitle subtitle__light">Lead Front-end Developer</h2>
+            <h2 class="subtitle subtitle__light">Lead Front End Developer</h2>
         </div>
     </div>
     <div class="about">
