@@ -1,33 +1,24 @@
 {
-  "name": "scss-compiler",
+  "name": "nm",
   "version": "1.0.0",
-  "description": "Compile scss files to minified, autoprefixed css",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "npm": "^5.6.0"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.23.5",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-notify": "^3.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.3",
-    "gulp-watch": "^5.0.0",
-    "livereload": "^0.6.3"
-  },
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/freemagee/hn.git"
+    "url": "git+https://github.com/freemagee/nm-portfolio.git"
   },
-  "author": "Neil Magee",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/freemagee/hn/issues"
+    "url": "https://github.com/freemagee/nm-portfolio/issues"
   },
-  "homepage": "https://github.com/freemagee/hn#readme"
+  "homepage": "https://neilmagee.com",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.22.9"
+  }
 }
