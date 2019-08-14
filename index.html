@@ -19,9 +19,17 @@
     </div>
   </div>
   <div class="about">
+    <div class="switch" role="tablist">
+      <button type="button" id="inBriefBtn" class="switch__btn switch__btn--left isActive" data-toggle="tab" role="tab" aria-controls="inBrief" aria-selected="true">In brief</button>
+      <button type="button" id="inDepthBtn" class="switch__btn switch__btn--right" data-toggle="tab" role="tab" aria-controls="inDepth" aria-selected="false">In depth</button>
+    </div>
     <div class="about__inner">
       <h2 class="about__subtitle">About me</h2>
-      <div class="about__text">
+      <div class="about__text about__text--brief" role="tabpanel" aria-labelledby="inbrief-tab" id="inBrief">
+        <p>I am a front-end developer based in the midlands, UK. With over a decade of professional knowledge I am passionate about user-interfaces, responsive apps and well written code.</p>
+        <p>I am proficient in multiple languages with a focus on <strong>JavaScript</strong>, <strong>CSS</strong> and good old <strong>HTML</strong>. You can keep up with some of my recent explorations at <a href="https://til.neilmagee.com">til.neilmagee.com</a>.</p>
+      </div>
+      <div class="about__text about__text--depth isHidden" role="tabpanel" aria-labelledby="indepth-tab" id="inDepth">
         <p>I care about code and crafting the best user experience. With over a decade of professional knowledge I have a keen ability to approach development projects with a clear vision and am able to deliver tailored solutions to clients, with the purpose and end user firmly in mind.</p>
         <p>Historically focused on front-end development, I am proficient at building user interfaces and tools using modern JavaScript frameworks such as <strong>React</strong> and <strong>Vue</strong>. I also specialise in making responsive websites/apps that help people achieve both aesthetic goals and meet business critical targets, including providing added value to customers and end users. I try and improve the use of CSS with <strong>BEM</strong> and utility first libraries such as <strong>Tailwind</strong> and make sure projects are accessible in multiple environments.</p>
         <p>With considerable experience in design, I am able to articulate complex ideas visually and communicate them effectively, using modern tools to illustrate interactive ideas or using wireframe software to plan prototypes. I often start lo-fi, with coloured pens and a white board, moving to tech-based solutions as ideas develop.</p>

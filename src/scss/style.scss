@@ -1,7 +1,8 @@
 $color__accent: hsl(5.6, 78.1%, 57.1%);
-$color__light: hsl(206.7, 27.3%, 93.5%);
+$color__light: hsl(210, 27.3%, 93.5%);
+$color__mid: hsl(210, 29.4%, 66.7%);
 $color__dark: hsl(210, 29%, 24.3%);
-$color__text: hsl(209.4, 28.8%, 32%);
+$color__text: hsl(210, 28.8%, 32%);
 
 $font__title: "Montserrat", sans-serif;
 $font__main: "Neuton", serif;
@@ -137,7 +138,9 @@ body {
 
 .about {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: $color__light;
 
   @media screen and (min-width: $bp__sm) {
@@ -157,13 +160,8 @@ body {
   &__text {
     padding: 0;
 
-    @media screen and (min-width: $bp__sm) {
-      columns: 2;
-      column-gap: 20px;
-    }
-
-    @media screen and (min-width: $bp__md) {
-      columns: 3;
+    &.isHidden {
+      display: none;
     }
 
     p {
@@ -171,6 +169,8 @@ body {
       font-size: 18px;
       line-height: 1.4;
       color: $color__text;
+      hyphens: auto;
+      text-align: justify;
     }
 
     p + p {
@@ -193,6 +193,63 @@ body {
       }
     }
   }
+
+  &__text--brief {
+    max-width: 400px;
+  }
+
+  &__text--depth {
+    @media screen and (min-width: $bp__sm) {
+      columns: 2;
+      column-gap: 20px;
+    }
+
+    @media screen and (min-width: $bp__md) {
+      columns: 3;
+    }
+  }
+}
+
+.switch {
+  display: flex;
+  padding: 1rem 0 0 0;
+
+  &__btn {
+    -webkit-appearance: none;
+    flex: 0 1;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: 1px solid #999;
+    background-color: transparent;
+    font-family: $font__main;
+    font-size: 18px;
+    white-space: nowrap;
+    color: #999;
+
+    &:hover,
+    &:active {
+      color: $color__dark;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    &.isActive {
+      color: $color__accent;
+      border-color: $color__accent;
+      border-width: 1px;
+      background-color: hsl(3.5,73.9%,95.5%);
+    }
+  }
+}
+
+.switch__btn--left {
+  border-right-width: 0;
+}
+
+.switch__btn--right {
+  border-left-width: 0;
 }
 
 .resources {
