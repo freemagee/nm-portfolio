@@ -11,11 +11,8 @@
     "url": "git+https://github.com/freemagee/nm-portfolio.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Neil Magee",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/freemagee/nm-portfolio/issues"
-  },
   "homepage": "https://neilmagee.com",
   "devDependencies": {
     "cssnano": "^4.1.10",
